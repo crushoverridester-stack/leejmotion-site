@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lee J motion | Motor drives, power conversion and control</title>
+<meta name="description" content="Lee J motion is a motion-control company in Changwon, Korea. We design and build motor drives, power converters, control panels and cable harnesses, and develop the control algorithms and embedded firmware that run them.">
+<link rel="canonical" href="https://leejmotion.com/en/">
+<link rel="alternate" hreflang="ko" href="https://leejmotion.com/">
+<link rel="alternate" hreflang="en" href="https://leejmotion.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://leejmotion.com/">
+<meta name="theme-color" content="#F2F4F1">
+<meta name="format-detection" content="telephone=no">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lee J motion">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:title" content="Lee J motion (이제이모션)">
+<meta property="og:description" content="We design and build motor drives, power converters and control panels, and develop the control algorithms and firmware that run inside them.">
+<meta property="og:url" content="https://leejmotion.com/en/">
+<meta property="og:image" content="https://leejmotion.com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lee J motion logo and company name">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preload" href="../assets/fonts/ljm-sans-kr-400-site.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://leejmotion.com/#org",
+      "name": "이제이모션",
+      "alternateName": "Lee J motion",
+      "url": "https://leejmotion.com/",
+      "logo": "https://leejmotion.com/assets/img/logo-512.png",
+      "email": "contact@leejmotion.com",
+      "foundingDate": "2026-10-01",
+      "taxID": "203-14-64110",
+      "founder": {
+        "@type": "Person",
+        "name": "이상훈",
+        "alternateName": "Lee SangHoon"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "평산로 33 신화더플렉스시티 901호",
+        "addressLocality": "창원시 의창구",
+        "addressRegion": "경상남도",
+        "postalCode": "51397",
+        "addressCountry": "KR"
+      },
+      "knowsAbout": [
+        "모터 제어",
+        "PMSM 서보 구동",
+        "전력전자",
+        "IGBT 인버터",
+        "임베디드 펌웨어",
+        "칼만 필터"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://leejmotion.com/#website",
+      "name": "이제이모션",
+      "alternateName": "Lee J motion",
+      "url": "https://leejmotion.com/",
+      "inLanguage": [
+        "ko",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://leejmotion.com/#org"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./">
+      <img class="brand-logo" src="../assets/img/logo.svg" width="163" height="48" alt="Lee J motion">
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#business">What we build</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#process">How we work</a></li>
+        <li><a href="#company">Company</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 id="hero-title">Precisely<br>on target.</h1>
+        <p class="lead">Lee J motion designs and builds motor drives, power converters and control panels, and writes the control algorithms and firmware that run inside them, so your equipment stops exactly where you command it.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#business">See what we build</a>
+        </div>
+      </div>
+
+      <figure class="bench drawing-surface" aria-labelledby="bench-cap">
+        <div class="bench-head">
+          <p class="bench-title">Position control simulation</p>
+          <dl class="readout">
+            <div><dt>Target</dt><dd><span data-ro="target">135.0</span>°</dd></div>
+            <div><dt>Actual</dt><dd><span data-ro="angle">135.0</span>°</dd></div>
+            <div><dt>Error</dt><dd><span data-ro="error">0.0</span>°</dd></div>
+          </dl>
+        </div>
+        <div class="dial" data-dial role="slider" tabindex="0" aria-label="Target angle" aria-valuemin="0" aria-valuemax="359" aria-valuenow="135" aria-valuetext="135 degrees" data-unit=" degrees">
+          <svg class="dial-svg" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+          <circle class="d-face" cx="200" cy="200" r="150"/>
+          <line class="d-tick-major" x1="200" y1="50" x2="200" y2="35"/>
+          <line class="d-tick" x1="213.07" y1="50.57" x2="213.68" y2="43.6"/>
+          <line class="d-tick" x1="226.05" y1="52.28" x2="227.26" y2="45.39"/>
+          <line class="d-tick" x1="238.82" y1="55.11" x2="240.63" y2="48.35"/>
+          <line class="d-tick" x1="251.3" y1="59.05" x2="253.7" y2="52.47"/>
+          <line class="d-tick" x1="263.39" y1="64.05" x2="266.35" y2="57.71"/>
+          <line class="d-tick-major" x1="275" y1="70.1" x2="282.5" y2="57.11"/>
+          <line class="d-tick" x1="286.04" y1="77.13" x2="290.05" y2="71.39"/>
+          <line class="d-tick" x1="296.42" y1="85.09" x2="300.92" y2="79.73"/>
+          <line class="d-tick" x1="306.07" y1="93.93" x2="311.02" y2="88.98"/>
+          <line class="d-tick" x1="314.91" y1="103.58" x2="320.27" y2="99.08"/>
+          <line class="d-tick" x1="322.87" y1="113.96" x2="328.61" y2="109.95"/>
+          <line class="d-tick-major" x1="329.9" y1="125" x2="342.89" y2="117.5"/>
+          <line class="d-tick" x1="335.95" y1="136.61" x2="342.29" y2="133.65"/>
+          <line class="d-tick" x1="340.95" y1="148.7" x2="347.53" y2="146.3"/>
+          <line class="d-tick" x1="344.89" y1="161.18" x2="351.65" y2="159.37"/>
+          <line class="d-tick" x1="347.72" y1="173.95" x2="354.61" y2="172.74"/>
+          <line class="d-tick" x1="349.43" y1="186.93" x2="356.4" y2="186.32"/>
+          <line class="d-tick-major" x1="350" y1="200" x2="365" y2="200"/>
+          <line class="d-tick" x1="349.43" y1="213.07" x2="356.4" y2="213.68"/>
+          <line class="d-tick" x1="347.72" y1="226.05" x2="354.61" y2="227.26"/>
+          <line class="d-tick" x1="344.89" y1="238.82" x2="351.65" y2="240.63"/>
+          <line class="d-tick" x1="340.95" y1="251.3" x2="347.53" y2="253.7"/>
+          <line class="d-tick" x1="335.95" y1="263.39" x2="342.29" y2="266.35"/>
+          <line class="d-tick-major" x1="329.9" y1="275" x2="342.89" y2="282.5"/>
+          <line class="d-tick" x1="322.87" y1="286.04" x2="328.61" y2="290.05"/>
+          <line class="d-tick" x1="314.91" y1="296.42" x2="320.27" y2="300.92"/>
+          <line class="d-tick" x1="306.07" y1="306.07" x2="311.02" y2="311.02"/>
+          <line class="d-tick" x1="296.42" y1="314.91" x2="300.92" y2="320.27"/>
+          <line class="d-tick" x1="286.04" y1="322.87" x2="290.05" y2="328.61"/>
+          <line class="d-tick-major" x1="275" y1="329.9" x2="282.5" y2="342.89"/>
+          <line class="d-tick" x1="263.39" y1="335.95" x2="266.35" y2="342.29"/>
+          <line class="d-tick" x1="251.3" y1="340.95" x2="253.7" y2="347.53"/>
+          <line class="d-tick" x1="238.82" y1="344.89" x2="240.63" y2="351.65"/>
+          <line class="d-tick" x1="226.05" y1="347.72" x2="227.26" y2="354.61"/>
+          <line class="d-tick" x1="213.07" y1="349.43" x2="213.68" y2="356.4"/>
+          <line class="d-tick-major" x1="200" y1="350" x2="200" y2="365"/>
+          <line class="d-tick" x1="186.93" y1="349.43" x2="186.32" y2="356.4"/>
+          <line class="d-tick" x1="173.95" y1="347.72" x2="172.74" y2="354.61"/>
+          <line class="d-tick" x1="161.18" y1="344.89" x2="159.37" y2="351.65"/>
+          <line class="d-tick" x1="148.7" y1="340.95" x2="146.3" y2="347.53"/>
+          <line class="d-tick" x1="136.61" y1="335.95" x2="133.65" y2="342.29"/>
+          <line class="d-tick-major" x1="125" y1="329.9" x2="117.5" y2="342.89"/>
+          <line class="d-tick" x1="113.96" y1="322.87" x2="109.95" y2="328.61"/>
+          <line class="d-tick" x1="103.58" y1="314.91" x2="99.08" y2="320.27"/>
+          <line class="d-tick" x1="93.93" y1="306.07" x2="88.98" y2="311.02"/>
+          <line class="d-tick" x1="85.09" y1="296.42" x2="79.73" y2="300.92"/>
+          <line class="d-tick" x1="77.13" y1="286.04" x2="71.39" y2="290.05"/>
+          <line class="d-tick-major" x1="70.1" y1="275" x2="57.11" y2="282.5"/>
+          <line class="d-tick" x1="64.05" y1="263.39" x2="57.71" y2="266.35"/>
+          <line class="d-tick" x1="59.05" y1="251.3" x2="52.47" y2="253.7"/>
+          <line class="d-tick" x1="55.11" y1="238.82" x2="48.35" y2="240.63"/>
+          <line class="d-tick" x1="52.28" y1="226.05" x2="45.39" y2="227.26"/>
+          <line class="d-tick" x1="50.57" y1="213.07" x2="43.6" y2="213.68"/>
+          <line class="d-tick-major" x1="50" y1="200" x2="35" y2="200"/>
+          <line class="d-tick" x1="50.57" y1="186.93" x2="43.6" y2="186.32"/>
+          <line class="d-tick" x1="52.28" y1="173.95" x2="45.39" y2="172.74"/>
+          <line class="d-tick" x1="55.11" y1="161.18" x2="48.35" y2="159.37"/>
+          <line class="d-tick" x1="59.05" y1="148.7" x2="52.47" y2="146.3"/>
+          <line class="d-tick" x1="64.05" y1="136.61" x2="57.71" y2="133.65"/>
+          <line class="d-tick-major" x1="70.1" y1="125" x2="57.11" y2="117.5"/>
+          <line class="d-tick" x1="77.13" y1="113.96" x2="71.39" y2="109.95"/>
+          <line class="d-tick" x1="85.09" y1="103.58" x2="79.73" y2="99.08"/>
+          <line class="d-tick" x1="93.93" y1="93.93" x2="88.98" y2="88.98"/>
+          <line class="d-tick" x1="103.58" y1="85.09" x2="99.08" y2="79.73"/>
+          <line class="d-tick" x1="113.96" y1="77.13" x2="109.95" y2="71.39"/>
+          <line class="d-tick-major" x1="125" y1="70.1" x2="117.5" y2="57.11"/>
+          <line class="d-tick" x1="136.61" y1="64.05" x2="133.65" y2="57.71"/>
+          <line class="d-tick" x1="148.7" y1="59.05" x2="146.3" y2="52.47"/>
+          <line class="d-tick" x1="161.18" y1="55.11" x2="159.37" y2="48.35"/>
+          <line class="d-tick" x1="173.95" y1="52.28" x2="172.74" y2="45.39"/>
+          <line class="d-tick" x1="186.93" y1="50.57" x2="186.32" y2="43.6"/>
+          <text class="d-label" x="200" y="18">0</text>
+          <text class="d-label" x="291" y="42.38">30</text>
+          <text class="d-label" x="357.62" y="109">60</text>
+          <text class="d-label" x="382" y="200">90</text>
+          <text class="d-label" x="357.62" y="291">120</text>
+          <text class="d-label" x="291" y="357.62">150</text>
+          <text class="d-label" x="200" y="382">180</text>
+          <text class="d-label" x="109" y="357.62">210</text>
+          <text class="d-label" x="42.38" y="291">240</text>
+          <text class="d-label" x="18" y="200">270</text>
+          <text class="d-label" x="42.38" y="109">300</text>
+          <text class="d-label" x="109" y="42.38">330</text>
+          <g class="d-target" transform="rotate(135 200 200)"><line class="d-setline" x1="200" y1="172" x2="200" y2="64"/><circle class="d-tgt-ring" cx="200" cy="50" r="9"/><circle class="d-tgt-dot" cx="200" cy="50" r="3"/></g>
+          <g class="d-needle" transform="rotate(135 200 200)"><line class="d-needle-tail" x1="200" y1="200" x2="200" y2="224"/><line class="d-needle-line" x1="200" y1="200" x2="200" y2="64"/><circle class="d-hub" cx="200" cy="200" r="12"/><circle class="d-hub-dot" cx="200" cy="200" r="4"/></g>
+          </svg>
+        </div>
+        <svg class="trace" data-trace viewBox="0 0 400 132" aria-hidden="true" focusable="false">
+        <line class="t-grid" x1="131" y1="20" x2="131" y2="108"/>
+        <line class="t-grid" x1="218" y1="20" x2="218" y2="108"/>
+        <line class="t-grid" x1="305" y1="20" x2="305" y2="108"/>
+        <line class="t-grid" x1="392" y1="20" x2="392" y2="108"/>
+        <line class="t-grid" x1="44" y1="70" x2="392" y2="70"/>
+        <line class="t-axis" x1="44" y1="108" x2="392" y2="108"/>
+        <line class="t-axis" x1="44" y1="20" x2="44" y2="108"/>
+        <polyline class="t-ref" points="44,108 44,32 392,32"/>
+        <path class="t-resp" d="M44,108 L46,107.88 L48,107.52 L50,106.96 L52,106.2 L54,105.26 L56,104.17 L58,102.92 L60,101.56 L62,100.07 L64,98.48 L66,96.81 L68,95.06 L70,93.25 L72,91.38 L74,89.46 L76,87.52 L78,85.54 L80,83.55 L82,81.55 L84,79.55 L86,77.55 L88,75.56 L90,73.59 L92,71.64 L94,69.71 L96,67.81 L98,65.95 L100,64.12 L102,62.33 L104,60.58 L106,58.88 L108,57.22 L110,55.62 L112,54.06 L114,52.55 L116,51.09 L118,49.69 L120,48.33 L122,47.03 L124,45.79 L126,44.59 L128,43.45 L130,42.36 L132,41.32 L134,40.34 L136,39.4 L138,38.51 L140,37.67 L142,36.87 L144,36.13 L146,35.42 L148,34.76 L150,34.15 L152,33.57 L154,33.03 L156,32.53 L158,32.07 L160,31.65 L162,31.25 L164,30.89 L166,30.57 L168,30.27 L170,30 L172,29.76 L174,29.54 L176,29.35 L178,29.18 L180,29.03 L182,28.9 L184,28.8 L186,28.71 L188,28.64 L190,28.58 L192,28.54 L194,28.52 L196,28.51 L198,28.51 L200,28.52 L202,28.54 L204,28.57 L206,28.61 L208,28.65 L210,28.71 L212,28.77 L214,28.83 L216,28.9 L218,28.98 L220,29.06 L222,29.14 L224,29.22 L226,29.31 L228,29.4 L230,29.49 L232,29.58 L234,29.67 L236,29.76 L238,29.86 L240,29.95 L242,30.04 L244,30.13 L246,30.22 L248,30.31 L250,30.39 L252,30.48 L254,30.56 L256,30.64 L258,30.72 L260,30.8 L262,30.87 L264,30.95 L266,31.02 L268,31.09 L270,31.15 L272,31.22 L274,31.28 L276,31.34 L278,31.39 L280,31.45 L282,31.5 L284,31.55 L286,31.59 L288,31.64 L290,31.68 L292,31.72 L294,31.76 L296,31.79 L298,31.83 L300,31.86 L302,31.89 L304,31.91 L306,31.94 L308,31.96 L310,31.99 L312,32.01 L314,32.02 L316,32.04 L318,32.06 L320,32.07 L322,32.09 L324,32.1 L326,32.11 L328,32.12 L330,32.13 L332,32.13 L334,32.14 L336,32.14 L338,32.15 L340,32.15 L342,32.16 L344,32.16 L346,32.16 L348,32.16 L350,32.16 L352,32.16 L354,32.16 L356,32.16 L358,32.16 L360,32.16 L362,32.15 L364,32.15 L366,32.15 L368,32.14 L370,32.14 L372,32.14 L374,32.13 L376,32.13 L378,32.13 L380,32.12 L382,32.12 L384,32.11 L386,32.11 L388,32.11 L390,32.1 L392,32.1"/>
+        <text class="t-label" x="36" y="108" text-anchor="end" dominant-baseline="central">0</text>
+        <text class="t-label" x="36" y="32" text-anchor="end" dominant-baseline="central">1</text>
+        <text class="t-label" x="44" y="126" text-anchor="middle">0</text>
+        <text class="t-label" x="218" y="126" text-anchor="middle">0.5</text>
+        <text class="t-label" x="392" y="126" text-anchor="end">1.0 s</text>
+        <line class="t-ref" x1="250" y1="10" x2="268" y2="10"/>
+        <text class="t-key" x="273" y="10" dominant-baseline="central">Target</text>
+        <line class="t-resp" x1="318" y1="10" x2="336" y2="10"/>
+        <text class="t-key" x="341" y="10" dominant-baseline="central">Response</text>
+        </svg>
+        <figcaption id="bench-cap">Click the dial to set a new target angle. The position controller brings the needle onto it, and the plot below draws the step response.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="business" class="section" aria-labelledby="business-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="business-title">We build the whole drive chain</h2>
+        <p>From the control panel that issues the command, through the power converter, to the motor that moves, plus the cables that connect them.</p>
+      </div>
+      <ol class="chain">
+        <li class="chain-item">
+          <div class="chain-top">
+          <svg class="chain-ill" viewBox="28 0 64 96" width="64" height="96" aria-hidden="true" focusable="false">
+            <rect class="ic" x="30" y="6" width="60" height="82" rx="2"/>
+            <rect class="ic" x="39" y="15" width="42" height="20" rx="1"/>
+            <path class="ic-thin" d="M43 30H49L52 20.5L56 23.5L60 21.8L64 22.6L77 22.4"/>
+            <circle class="ic" cx="45" cy="46" r="3.2"/><circle class="ic" cx="60" cy="46" r="3.2"/><circle class="ic" cx="75" cy="46" r="3.2"/>
+            <rect class="ic" x="41" y="56" width="8" height="13" rx="1"/><rect class="ic" x="56" y="56" width="8" height="13" rx="1"/><rect class="ic" x="71" y="56" width="8" height="13" rx="1"/>
+            <path class="ic-thin" d="M40 77H80M40 81H80"/>
+            <path class="ic" d="M34 88V92M86 88V92"/>
+          </svg>
+          </div>
+          <h3>Control panels and controllers</h3>
+          <p>Motion controllers, electrical control panels, and control units for operation and testing</p>
+          <p class="reg"><span>Registered as</span>Manufacture of switchboards and electric automatic control panels</p>
+        </li>
+        <li class="chain-item">
+          <div class="chain-top">
+          <svg class="chain-ill" viewBox="20 0 80 96" width="80" height="96" aria-hidden="true" focusable="false">
+            <rect class="ic" x="22" y="22" width="76" height="44" rx="2"/>
+            <rect class="ic" x="34" y="12" width="9" height="10" rx="1"/><rect class="ic" x="55.5" y="12" width="9" height="10" rx="1"/><rect class="ic" x="77" y="12" width="9" height="10" rx="1"/>
+            <path class="ic-thin" d="M33 46C38 36 43 36 48 46S58 56 63 46S73 36 78 46S88 56 90 50"/>
+            <path class="ic-thin" d="M26 66V86M32 66V86M38 66V86M44 66V86M50 66V86M56 66V86M62 66V86M68 66V86M74 66V86M80 66V86M86 66V86M92 66V86"/>
+            <path class="ic" d="M22 86H98"/>
+          </svg>
+          </div>
+          <h3>Power converters</h3>
+          <p>IGBT inverters and converters, gate drives, current and voltage sensing, and protection circuits</p>
+          <p class="reg"><span>Registered as</span>Manufacture of other electric converters</p>
+        </li>
+        <li class="chain-item">
+          <div class="chain-top">
+          <svg class="chain-ill" viewBox="10 0 102 96" width="102" height="96" aria-hidden="true" focusable="false">
+            <rect class="ic" x="12" y="36" width="13" height="26" rx="2"/>
+            <rect class="ic" x="25" y="28" width="57" height="42" rx="4"/>
+            <path class="ic-thin" d="M37 32V66M48 32V66M59 32V66M70 32V66"/>
+            <rect class="ic" x="44" y="18" width="20" height="10" rx="1"/>
+            <rect class="ic" x="82" y="22" width="8" height="54" rx="1"/>
+            <path class="ic" d="M90 45H110V53H90"/>
+            <path class="ic-thin" d="M98 45V49H104V45"/>
+          </svg>
+          </div>
+          <h3>Motors and drive units</h3>
+          <p>PMSM servo drive units combined with high-resolution encoders for position control</p>
+          <p class="reg"><span>Registered as</span>Manufacture of electric motors and generators</p>
+        </li>
+      </ol>
+      <div class="cable-note">
+          <svg class="cable-ill" viewBox="0 0 120 40" aria-hidden="true" focusable="false">
+            <rect class="ic" x="4" y="11" width="16" height="18" rx="2"/>
+            <path class="ic-thin" d="M8 16V24M12 16V24M16 16V24"/>
+            <path class="ic" d="M20 17H100M20 23H100"/>
+            <rect class="ic" x="100" y="11" width="16" height="18" rx="2"/>
+            <path class="ic-thin" d="M104 16V24M108 16V24M112 16V24"/>
+          </svg>
+        <div>
+          <h3>Cables and harnesses</h3>
+          <p>Power and signal cables and connector harnesses that tie the three together.</p>
+          <p class="reg"><span>Registered as</span>Manufacture of other insulated wires and cables</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="technology" class="section section-tint" aria-labelledby="technology-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="technology-title">From command to shaft, the whole control loop</h2>
+        <p>We design every stage a position command passes through before it becomes motion at the motor shaft.</p>
+      </div>
+      <figure class="loop drawing-surface">
+        <svg class="loop-wide" viewBox="0 0 1100 400" role="img" aria-labelledby="lwen-t lwen-d">
+        <title id="lwen-t">Position control loop block diagram</title><desc id="lwen-d">The target position r passes through the position and speed controller (1), the FOC current controller (2) and the IGBT inverter (3) to drive the PMSM. Position sensing/tracking (4) gives the position, the state estimator (5, Kalman filter) refines it and feeds it back, and phase current returns to the inner loop. Blocks 1, 2 and 5 run in the TI C2000 DSP firmware (6).</desc>
+        <defs><marker id="lwen-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="lp-head"/></marker><marker id="lwen-ars" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="lp-head-sig"/></marker></defs>
+        <rect class="lp-dsp" x="86" y="52" width="520" height="332" rx="4"/>
+        <g class="lp-balloon"><circle cx="104" cy="30" r="13"/><text x="104" y="30" dominant-baseline="central">6</text></g>
+        <text class="lp-note lp-strong" x="124" y="30" text-anchor="start" dominant-baseline="central">DSP firmware (TI C2000)</text>
+        <text class="lp-var" x="30" y="160" text-anchor="middle" dominant-baseline="central">r</text>
+        <text class="lp-note" x="24" y="190" text-anchor="start">target</text>
+        <path class="lp-line lp-sig" d="M42,160 L104,160" marker-end="url(#lwen-ars)"/>
+        <circle class="lp-sum" cx="120" cy="160" r="16"/>
+        <path class="lp-line" d="M108.7 148.7L131.3 171.3M131.3 148.7L108.7 171.3"/>
+        <text class="lp-var" x="96" y="146" text-anchor="middle" dominant-baseline="central">+</text>
+        <text class="lp-var" x="136" y="196" text-anchor="middle" dominant-baseline="central">−</text>
+        <path class="lp-line" d="M136,160 L180,160" marker-end="url(#lwen-ar)"/>
+        <text class="lp-var" x="158" y="148" text-anchor="middle">e</text>
+        <rect class="lp-block" x="180" y="125" width="170" height="70" rx="2"/><text class="lp-text" x="265" y="150" dominant-baseline="central" font-size="15">Position and</text><text class="lp-text lp-sub" x="265" y="172" dominant-baseline="central" font-size="13">speed control</text>
+        <path class="lp-line" d="M350,160 L420,160" marker-end="url(#lwen-ar)"/>
+        <text class="lp-var" x="385" y="148" text-anchor="middle">i*</text>
+        <rect class="lp-block" x="420" y="125" width="170" height="70" rx="2"/><text class="lp-text" x="505" y="150" dominant-baseline="central" font-size="15">Current control</text><text class="lp-text lp-sub" x="505" y="172" dominant-baseline="central" font-size="13">(FOC)</text>
+        <path class="lp-line" d="M590,160 L650,160" marker-end="url(#lwen-ar)"/>
+        <text class="lp-var" x="629" y="148" text-anchor="middle">PWM</text>
+        <rect class="lp-block" x="650" y="125" width="150" height="70" rx="2"/><text class="lp-text" x="725" y="150" dominant-baseline="central" font-size="15">Inverter</text><text class="lp-text lp-sub" x="725" y="172" dominant-baseline="central" font-size="13">(IGBT)</text>
+        <path class="lp-line" d="M800,160 L860,160" marker-end="url(#lwen-ar)"/>
+        <text class="lp-var" x="830" y="148" text-anchor="middle">uvw</text>
+        <rect class="lp-block" x="860" y="125" width="130" height="70" rx="2"/><text class="lp-text" x="925" y="150" dominant-baseline="central" font-size="15">Motor</text><text class="lp-text lp-sub" x="925" y="172" dominant-baseline="central" font-size="13">(PMSM)</text>
+        <path class="lp-line" d="M990,160 L1062,160" marker-end="url(#lwen-ar)"/>
+        <text class="lp-var" x="1080" y="160" text-anchor="middle" dominant-baseline="central">y</text>
+        <text class="lp-note" x="1094" y="190" text-anchor="end">actual position</text>
+        <circle class="lp-dot" cx="830" cy="160" r="3.5"/>
+        <path class="lp-line" d="M830,160 L830,234 L505,234 L505,196" marker-end="url(#lwen-ar)"/>
+        <text class="lp-note" x="668" y="226" text-anchor="middle">phase current</text>
+        <circle class="lp-dot" cx="1030" cy="160" r="3.5"/>
+        <path class="lp-line" d="M1030,160 L1030,310 L991,310" marker-end="url(#lwen-ar)"/>
+        <rect class="lp-block" x="860" y="275" width="130" height="70" rx="2"/><text class="lp-text" x="925" y="300" dominant-baseline="central" font-size="14">Position sensing/</text><text class="lp-text" x="925" y="321" dominant-baseline="central" font-size="14">tracking</text>
+        <path class="lp-line" d="M860,310 L601,310" marker-end="url(#lwen-ar)"/>
+        <text class="lp-note" x="730" y="300" text-anchor="middle">position</text>
+        <rect class="lp-block" x="420" y="275" width="180" height="70" rx="2"/><text class="lp-text" x="510" y="300" dominant-baseline="central" font-size="15">State estimator</text><text class="lp-text lp-sub" x="510" y="322" dominant-baseline="central" font-size="13">(Kalman filter)</text>
+        <path class="lp-line" d="M420,310 L120,310 L120,177" marker-end="url(#lwen-ar)"/>
+        <text class="lp-note" x="270" y="300" text-anchor="middle">estimate</text>
+        <path class="lp-leader" d="M265 105V125M505 105V125M725 105V125M925 345V352M510 345V352"/>
+        <g class="lp-balloon"><circle cx="265" cy="92" r="13"/><text x="265" y="92" dominant-baseline="central">1</text></g>
+        <g class="lp-balloon"><circle cx="505" cy="92" r="13"/><text x="505" y="92" dominant-baseline="central">2</text></g>
+        <g class="lp-balloon"><circle cx="725" cy="92" r="13"/><text x="725" y="92" dominant-baseline="central">3</text></g>
+        <g class="lp-balloon"><circle cx="925" cy="365" r="13"/><text x="925" y="365" dominant-baseline="central">4</text></g>
+        <g class="lp-balloon"><circle cx="510" cy="365" r="13"/><text x="510" y="365" dominant-baseline="central">5</text></g>
+        </svg>
+        <svg class="loop-tall" viewBox="0 0 360 600" role="img" aria-labelledby="lten-t lten-d">
+        <title id="lten-t">Position control loop block diagram</title><desc id="lten-d">The target position r passes through the position and speed controller (1), the FOC current controller (2) and the IGBT inverter (3) to drive the PMSM. Position sensing/tracking (4) gives the position, the state estimator (5, Kalman filter) refines it and feeds it back, and phase current returns to the inner loop. Blocks 1, 2 and 5 run in the TI C2000 DSP firmware (6).</desc>
+        <defs><marker id="lten-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="lp-head"/></marker><marker id="lten-ars" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="lp-head-sig"/></marker></defs>
+        <rect class="lp-dsp" x="6" y="56" width="348" height="232" rx="4"/>
+        <g class="lp-balloon"><circle cx="214" cy="36" r="11"/><text x="214" y="36" dominant-baseline="central">6</text></g>
+        <text class="lp-note lp-strong" x="231" y="36" text-anchor="start" dominant-baseline="central">DSP firmware</text>
+        <path class="lp-line lp-sig" d="M96,10 L96,67" marker-end="url(#lten-ars)"/>
+        <text class="lp-var" x="108" y="26" text-anchor="start" dominant-baseline="central">r</text>
+        <text class="lp-note" x="122" y="26" text-anchor="start" dominant-baseline="central">target</text>
+        <circle class="lp-sum" cx="96" cy="84" r="16"/>
+        <path class="lp-line" d="M84.7 72.7L107.3 95.3M107.3 72.7L84.7 95.3"/>
+        <text class="lp-var" x="80" y="62" text-anchor="middle" dominant-baseline="central">+</text>
+        <text class="lp-var" x="124" y="72" text-anchor="middle" dominant-baseline="central">−</text>
+        <path class="lp-line" d="M96,100 L96,123" marker-end="url(#lten-ar)"/>
+        <text class="lp-var" x="106" y="112" text-anchor="start" dominant-baseline="central">e</text>
+        <rect class="lp-block" x="16" y="124" width="160" height="56" rx="2"/><text class="lp-text" x="96" y="142" dominant-baseline="central" font-size="14">Position and</text><text class="lp-text lp-sub" x="96" y="164" dominant-baseline="central" font-size="12">speed control</text>
+        <path class="lp-line" d="M96,180 L96,215" marker-end="url(#lten-ar)"/>
+        <text class="lp-var" x="106" y="198" text-anchor="start" dominant-baseline="central">i*</text>
+        <rect class="lp-block" x="16" y="216" width="160" height="56" rx="2"/><text class="lp-text" x="96" y="234" dominant-baseline="central" font-size="14">Current control</text><text class="lp-text lp-sub" x="96" y="256" dominant-baseline="central" font-size="12">(FOC)</text>
+        <path class="lp-line" d="M96,272 L96,311" marker-end="url(#lten-ar)"/>
+        <text class="lp-var" x="106" y="300" text-anchor="start" dominant-baseline="central">PWM</text>
+        <rect class="lp-block" x="16" y="312" width="160" height="56" rx="2"/><text class="lp-text" x="96" y="330" dominant-baseline="central" font-size="14">Inverter</text><text class="lp-text lp-sub" x="96" y="352" dominant-baseline="central" font-size="12">(IGBT)</text>
+        <path class="lp-line" d="M96,368 L96,407" marker-end="url(#lten-ar)"/>
+        <text class="lp-var" x="106" y="381" text-anchor="start" dominant-baseline="central">uvw</text>
+        <rect class="lp-block" x="16" y="408" width="160" height="56" rx="2"/><text class="lp-text" x="96" y="426" dominant-baseline="central" font-size="14">Motor</text><text class="lp-text lp-sub" x="96" y="448" dominant-baseline="central" font-size="12">(PMSM)</text>
+        <path class="lp-line" d="M96,464 L96,546" marker-end="url(#lten-ar)"/>
+        <text class="lp-var" x="108" y="532" text-anchor="start" dominant-baseline="central">y</text>
+        <text class="lp-note" x="96" y="572" text-anchor="middle">actual position</text>
+        <circle class="lp-dot" cx="96" cy="398" r="3.5"/>
+        <path class="lp-line" d="M96,398 L188,398 L188,244 L177,244" marker-end="url(#lten-ar)"/>
+        <text class="lp-note" x="196" y="330" text-anchor="start" dominant-baseline="central">phase current</text>
+        <circle class="lp-dot" cx="96" cy="505" r="3.5"/>
+        <path class="lp-line" d="M96,505 L272,505 L272,465" marker-end="url(#lten-ar)"/>
+        <rect class="lp-block" x="200" y="408" width="144" height="56" rx="2"/><text class="lp-text" x="272" y="426" dominant-baseline="central" font-size="14">Position sensing/</text><text class="lp-text" x="272" y="447" dominant-baseline="central" font-size="14">tracking</text>
+        <path class="lp-line" d="M272,408 L272,273" marker-end="url(#lten-ar)"/>
+        <text class="lp-note" x="282" y="346" text-anchor="start" dominant-baseline="central">position</text>
+        <rect class="lp-block" x="200" y="216" width="144" height="56" rx="2"/><text class="lp-text" x="272" y="234" dominant-baseline="central" font-size="14">State estimator</text><text class="lp-text lp-sub" x="272" y="256" dominant-baseline="central" font-size="12">(Kalman filter)</text>
+        <path class="lp-line" d="M272,216 L272,84 L113,84" marker-end="url(#lten-ar)"/>
+        <text class="lp-note" x="192" y="74" text-anchor="middle">estimate</text>
+        <g class="lp-balloon"><circle cx="16" cy="124" r="11"/><text x="16" y="124" dominant-baseline="central">1</text></g>
+        <g class="lp-balloon"><circle cx="16" cy="216" r="11"/><text x="16" y="216" dominant-baseline="central">2</text></g>
+        <g class="lp-balloon"><circle cx="16" cy="312" r="11"/><text x="16" y="312" dominant-baseline="central">3</text></g>
+        <g class="lp-balloon"><circle cx="200" cy="408" r="11"/><text x="200" y="408" dominant-baseline="central">4</text></g>
+        <g class="lp-balloon"><circle cx="200" cy="216" r="11"/><text x="200" y="216" dominant-baseline="central">5</text></g>
+        </svg>
+        <figcaption>Numbers in the drawing match the items below.</figcaption>
+      </figure>
+      <ol class="tech-list">
+        <li><h3>Position and speed control</h3><p>Cascaded position and speed loops, tuned to follow the target through load changes and disturbances.</p></li>
+        <li><h3>FOC current control</h3><p>Field-oriented control of PMSMs to command torque directly. The current-loop bandwidth sets the response of every loop above it.</p></li>
+        <li><h3>Inverter and power stage</h3><p>IGBT gate drive, current and voltage sensing, over-current and thermal protection, and the heat-sink design.</p></li>
+        <li><h3>Position sensing/tracking</h3><p>Resolvers and digital position sensors such as BiSS-C, and fusion of several sensor signals for higher absolute accuracy.</p></li>
+        <li><h3>State estimation</h3><p>Kalman filters that estimate position, speed and acceleration while reducing the effect of sensor noise and delay.</p></li>
+        <li><h3>Embedded firmware</h3><p>Real-time control cycles, communication and diagnostics on TI C2000 dual-core DSPs.</p></li>
+      </ol>
+      <p class="tech-note">All hardware is designed with EMC, grounding and shielding, and military-standard (MIL-STD) requirements in mind.</p>
+    </div>
+  </section>
+
+  <section id="process" class="section" aria-labelledby="process-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="process-title">From requirements to production</h2>
+        <p>One team carries the work from start to finish, so nothing gets lost between stages.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Requirements</h3><p>Agree on operating conditions, interfaces and test criteria.</p></li>
+        <li><h3>Design</h3><p>Design the control algorithm, circuits and firmware structure, and check them in simulation.</p></li>
+        <li><h3>Prototype</h3><p>Build the boards and harnesses, load the firmware and run it against a real load.</p></li>
+        <li><h3>Test and verification</h3><p>Prepare performance, environmental and EMC tests and document the results.</p></li>
+        <li><h3>Production and support</h3><p>Hand over production documentation and solve field issues together.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="company" class="section" aria-labelledby="company-title">
+    <div class="wrap">
+      <div class="company-about">
+        <h2 id="company-title">About us</h2>
+        <p>Lee J motion opened in Changwon, Korea in October 2026 as a motion-control company. Control algorithms, power electronics and embedded firmware are handled by one team, so every change is designed with its effect on the rest of the system in view.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <img class="footer-logo" src="../assets/img/logo.svg" width="136" height="40" alt="Lee J motion">
+    <div class="footer-text">
+      <p class="biz"><span>Lee J motion (이제이모션)</span><span>Representative Lee SangHoon</span><span>Business registration no. 203-14-64110</span></p>
+      <p>33 Pyeongsan-ro, Uichang-gu, Changwon-si, Gyeongsangnam-do 51397, Republic of Korea</p>
+      <p>© 2026 Lee J motion</p>
+    </div>
+    <a class="footer-lang" href="../" hreflang="ko" lang="ko">한국어</a>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
